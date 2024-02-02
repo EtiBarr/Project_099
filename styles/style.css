@@ -13,7 +13,7 @@ body {
 
 header {
     display: flex;
-    height: 7vh;
+    height: 7vmin;
     max-height: 100px;
     flex-direction: row;
     background-color: rgba(255, 255, 255, 0.911);
@@ -51,7 +51,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.911);
     align-items: flex-end;
     position: sticky;
-    top: 7vh;       /* Height of the header, so the sticky follows both */
+    top: 7vmin;       /* Height of the header, so the sticky follows both */
     z-index: 999; /* Ensures nav is below the header */
     justify-content: space-between;
 }
@@ -73,7 +73,7 @@ nav button:hover {
 main {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     height: 100vh; /* height set just to display the scrallability*/
     transition: margin-left 0.5s;
@@ -91,7 +91,9 @@ aside {
     color: white;
     position: fixed;
     font-size: 1vmax;
+    transition: 0.5s;
 }
+
 
 aside p {
     color: cyan;
@@ -102,9 +104,6 @@ aside p {
 
 aside.collapsed {
     width: 0;
-}
-
-aside.collapsed .hide-text {
     display: none;
 }
 
@@ -117,13 +116,17 @@ content {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 11vmin;
-    margin-right: 1vh;
     flex-grow: 1;
+    margin-left: 12em;
+    margin-right: 1vh;
     margin-bottom: 5vh;
+    position: relative;
+    transition: 0.5s;
 }
 
-
+content.collapsed{
+    margin-left: 0;
+}
 
 
 footer {
@@ -147,6 +150,11 @@ footer h5 a {
     text-decoration: none;
     margin-right: 5px;
 }
+
+
+
+
+
 
 
 
