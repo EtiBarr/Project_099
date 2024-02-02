@@ -1,0 +1,195 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #2e2d2d;
+    min-height: 100vh;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+
+
+
+header {
+    display: flex;
+    height: 7vh;
+    max-height: 100px;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.911);
+    align-items: flex-end;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+}
+
+header img {
+    width: 15vmin;
+    max-width: 250px;
+}
+
+header button {
+    background-color: cyan;
+    width: fit-content;
+    height: 3vh;
+    font-size: 1.5vmin;
+    max-height: 2em;
+}
+
+header button:hover {
+    background-color: magenta;
+    cursor: pointer;
+}
+
+
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh; /* height set just to display the scrallability*/
+}
+
+
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 12vmin;
+    max-width: 150px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    font-size: 1vh;
+}
+
+aside p {
+    color: cyan;
+    text-decoration: none;
+    font-size: large;
+    width: fit-content;
+}
+
+
+
+
+content {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 11vmin;
+    margin-right: 1vh;
+    flex-grow: 1;
+    margin-bottom: 5vh;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding: 2vmin;
+}
+
+footer h5 {
+    margin: 0;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer h5 a {
+    color: cyan;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sign-inHeader h1, .sign-inHeader p{
+    color: white;
+}
+
+
+.sign-inHeader img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+
+h3{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.sign-in{
+    width: 330px;
+    padding:20px;
+}
+
+.button{
+    width: 375px;
+    padding: 15px;
+    background-color: cyan;
+    color: black;
+}
+
+
+
+.landing{
+    text-align: center;
+    color: white;
+}
+
+.label{
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+section{
+    margin-left: 35%;
+}
+
+
+
+.logos{
+    margin-left:43%;
+}
+
+
+
+.centered{
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
