@@ -2,10 +2,19 @@
 body {
     display: flex;
     flex-direction: column;
-    background: #2e2d2d;
-    min-height: 100vh;
+    min-height: 150vmin;
     justify-content: flex-start;
     margin: 0;
+    backface-visibility: hidden;
+
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='274' height='274' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2307FFF6' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23FF00FF'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+
+    /* for light version
+background-color: #FFFFFF;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='274' height='274' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2307FFF6' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23FF00FF'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E");
+    */
 }
 
 
@@ -14,10 +23,9 @@ body {
 header {
     display: flex;
     height: 7vmin;
-    max-height: 100px;
     flex-direction: row;
-    background-color: rgba(255, 255, 255, 0.911);
-    align-items: flex-end;
+    background-color: #FFFFFF;
+    align-items: center;
     position: sticky;
     top: 0;
     justify-content: space-between;
@@ -25,18 +33,16 @@ header {
 
 header img {
     width: 15vmin;
-    max-width: 250px;
 }
 
 header button {
     background-color: cyan;
     width: fit-content;
-    height: 3vh;
-    font-size: 1.5vmin;
-    max-height: 2em;
+    height: fit-content;
+    font-size: 1.4rem;
 }
 
-header button:hover {
+header button:hover, nav button:hover {
     background-color: magenta;
     cursor: pointer;
 }
@@ -45,28 +51,20 @@ header button:hover {
 
 nav {
     display: flex;
-    height: 2vh;
-    max-height: 100px;
+    height: 2vmin;
     flex-direction: row;
-    background-color: rgba(255, 255, 255, 0.911);
+    background-color: #FFFFFF;
     align-items: flex-end;
     position: sticky;
     top: 7vmin;       /* Height of the header, so the sticky follows both */
-    z-index: 999; /* Ensures nav is below the header */
     justify-content: space-between;
 }
 
 nav button {
     background-color: cyan;
     width: fit-content;
-    height: 3vh;
-    font-size: 1vmin;
-    max-height: 2em;
-}
-
-nav button:hover {
-    background-color: magenta;
-    cursor: pointer;
+    height: fit-content;
+    font-size: 1rem;
 }
 
 
@@ -79,36 +77,43 @@ main {
     transition: margin-left 0.5s;
 }
 
-
-
-
 aside {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 12em;
     background-color: black;
-    color: white;
+    color: cyan;
     position: fixed;
-    font-size: 1vmax;
-    transition: 0.5s;
+    padding: 1vmin;
+    height: 100%;
+    width: 9em;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
+aside table {
+    border-collapse: separate;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.2s; 
+}
 
-aside p {
-    color: cyan;
-    text-decoration: none;
-    font-size: large;
-    width: fit-content;
+aside:not(.collapsed) table {
+    opacity: 1;
+}
+
+aside th, aside td {
+    padding: 1em;
+    text-align: center;
 }
 
 aside.collapsed {
     width: 0;
-    display: none;
+    overflow: hidden;
 }
 
-
-
+aside, content {
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
 
 content {
     display: flex;
@@ -117,17 +122,14 @@ content {
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
-    margin-left: 12em;
-    margin-right: 1vh;
-    margin-bottom: 5vh;
-    position: relative;
-    transition: 0.5s;
+    margin-left: 8em;
+    margin-right: 1vmin;
+    margin-bottom: 5vmin;
 }
 
-content.collapsed{
+content.collapsed {
     margin-left: 0;
 }
-
 
 footer {
     background-color: black;
@@ -142,14 +144,9 @@ footer h5 {
 }
 
 footer img {
-    width: 50px;
+    width: 5vmin;
 }
 
-footer h5 a {
-    color: cyan;
-    text-decoration: none;
-    margin-right: 5px;
-}
 
 
 
