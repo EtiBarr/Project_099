@@ -25,7 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const whiteLogo = document.querySelector(".whiteLogo");
     const navbtn = document.querySelector("#collapseBtn");
     const themeToggle = document.querySelector("#themeToggle");
-    const signinbtnn = document.querySelector("#signinbtn");
+    const signinbtn = document.querySelector("#signinbtn");
+    const signupbtn = document.querySelector("#signUpbtn");
+    const selectors = document.querySelector("#selectors");
+
 
 
     toggleButton.addEventListener("click", function () {
@@ -37,7 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
         footer.classList.toggle("light");
         navbtn.classList.toggle("light");
         themeToggle.classList.toggle("light");
-        signinbtnn.classList.toggle("light");
+        signinbtn.classList.toggle("light");
+        signupbtn.classList.toggle("light");
+        selectors.classList.toggle("light");
+
+
 
         
 
@@ -55,3 +62,41 @@ document.addEventListener("DOMContentLoaded", function () {
         
     });
 });
+
+
+/* pottential to make the code more elegant
+
+document.addEventListener("DOMContentLoaded", function () {
+    const body = document.body;
+    const toggleButton = document.getElementById("themeToggle");
+    const blackLogo = document.querySelector(".blackLogo");
+    const whiteLogo = document.querySelector(".whiteLogo");
+
+    const elementsToToggle = [body, document.querySelector("header"), document.querySelector("nav"), 
+                              document.querySelector("aside"), document.querySelector("content"),
+                              document.querySelector("footer"), document.querySelector("#collapseBtn"),
+                              document.querySelector("#themeToggle"), document.querySelector("#signinbtn"),
+                              document.querySelector("#signUpbtn"), document.querySelector("#selectors")];
+
+    toggleButton.addEventListener("click", function () {
+        body.classList.toggle("light");
+
+        // Toggle classes for other elements
+        elementsToToggle.forEach(element => element.classList.toggle("light"));
+
+        // Update image sources based on the theme
+        toggleImageSource(blackLogo);
+        toggleImageSource(whiteLogo);
+
+        // Update button text based on the theme
+        toggleButton.innerText = body.classList.contains("light") ? 'Dark' : 'Light';
+    });
+
+    function toggleImageSource(imageElement) {
+        const currentSrc = body.classList.contains("light") ? imageElement.dataset.dark : imageElement.dataset.light;
+        imageElement.setAttribute("src", currentSrc);
+    }
+});
+
+
+*/
