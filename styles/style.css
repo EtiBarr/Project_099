@@ -33,10 +33,13 @@ header img {
     background-color: cyan;
     width: fit-content;
     height: fit-content;
-    font-size: 1.2rem;
-    border-radius: 10em;
+    font-size: 0.8rem;
+    border-radius: 8em;
 }
 
+#headerTitle{
+    color: black;
+}
 
 
 #themeToggle:hover, #signinbtn:hover, #signUpbtn:hover, #collapseBtn:hover {
@@ -50,9 +53,12 @@ header img {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    width: 20vmin;
 }
 
-
+#headerimg{
+    width: 20vmin;
+}
 
 
 nav {
@@ -73,10 +79,25 @@ nav {
     font-size: 1rem;
 }
 
-#selectors{
-    display: flex; 
-    justify-content: space-between; 
-    width: 40vw;
+.collapseBtn{
+    width:20vw;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.btn:hover{
+    background-color: magenta
+}
+
+
+#signBtns{
+    display: flex;
+    justify-content: flex-end;
+    width: 20vw
 }
 
 
@@ -90,15 +111,6 @@ main {
 }
 
 
-.dropdown button{
-    background-color: white;
-    color: black;
-    border: none;
-}
-
-.dropdown button:hover{
-    background-color: magenta
-}
 
 aside {
     display: flex;
@@ -108,7 +120,7 @@ aside {
     position: fixed;
     padding: 1vmin;
     height: 100%;
-    width: 9em;
+    width: 10em;
     font-size: 1.2rem;
     text-decoration: none;
     transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -170,6 +182,7 @@ footer {
 
 footer h5 {
     margin: 0;
+    font-size: .8rem;
 }
 
 footer img {
@@ -219,11 +232,14 @@ footer.light{
     color: black;
 }
 
+#headerTitle.light{
+    color: white;
+}
 
-
-
-
-
+.btn.light{
+    background-color: black;
+    color: white;
+}
 
 
 

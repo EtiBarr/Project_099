@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.querySelector("#themeToggle");
     const signinbtn = document.querySelector("#signinbtn");
     const signupbtn = document.querySelector("#signUpbtn");
-    const selectors = document.querySelector("#selectors");
+    const headerTitle = document.querySelector("#headerTitle");
+    const btn = document.querySelectorAll('.btn');
+
+    
 
 
 
@@ -43,8 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
         signinbtn.classList.toggle("light");
         signupbtn.classList.toggle("light");
         selectors.classList.toggle("light");
+        headerTitle.classList.toggle("light");
+        btn.forEach(el => {
+            el.classList.toggle('light');
+          })
 
-
+        
+       
 
         
 

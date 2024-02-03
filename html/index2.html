@@ -18,70 +18,76 @@
 
 <body>
 
-
     <header>
+        <div id="headerimg">
 
-        <img src="/images/plain_logo.png" class="blackLogo">
+            <img src="/images/plain_logo.png" class="blackLogo">
 
-        <h1>Team name</h1>
-        
-        <div></div>
+        </div>
+
+        <div id="headerTitle">
+
+            <h1>Team name</h1>
+
+        </div>
+
+        <div id="header-btns" >   
+
+            <button id="themeToggle">🌑</button>
+          
+        </div>
         
     </header>
 
     <nav>
-        <button id="collapseBtn">➖</button>
+
+        <div class="collapseBtn">
+
+            <button id="collapseBtn">➖</button>
+
+        </div>
         
-        <div id="selectors">
-
+   
             
-            <!--Bootstrap -->
-           
+        <!--Bootstrap -->
+        <div class="dropdown" id="selectors">
 
+            <button type="button" class="btn btn-primary" >Home</button>
+            <button type="button" class="btn btn-primary">About Us</button>
 
-            <div class="dropdown">
-                <button type="button" class="btn btn-primary" >Home</button>
-                <button type="button" class="btn btn-primary">About Us</button>
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Option One
-                </button>
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Option One
+            </button>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item active" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                <li><a class="dropdown-item active" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
                 </ul>
-              
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Option Two
-                </button>
+            
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Option Two
+            </button>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item active" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                <li><a class="dropdown-item active" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
                 </ul>
 
-                <button type="button" class="btn btn-primary">Contact Us</button>
-              </div>
+            <button type="button" class="btn btn-primary">Contact Us</button>
+
+        </div>
              
 
-          
+        <div id="signBtns">
+
+            <button id="signUpbtn" type="button" >Sign Up</button>
+            <a href="signin.html" name="signin" id="signin" target="_blank"> <button id="signinbtn" type="button" >Sign In </button></a>
+        
         </div>
-
-        <div>
-            <div id="header-btns" >   
-
-                <button id="themeToggle">🌑</button>
-              
-    
-            </div>
-
-            <button id="signUpbtn" type="button" class="btn btn-primary" >Sign Up</button>
-            <a href="signin.html" name="signin" id="signin" target="_blank"> <button id="signinbtn" type="button" class="btn btn-primary">Sign In </button></a>
-         </div>
 
     </nav>
 
