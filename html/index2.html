@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page two</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
     <link href="/styles/style.css" rel="stylesheet">
+
     <script src="/scripts/script.js"></script>
 
 </head>
@@ -16,15 +23,9 @@
 
         <img src="/images/plain_logo.png" class="blackLogo">
 
-        <div id="header-btns">   
-
-            <button id="themeToggle">Light</button>
-            <div>
-                <button id="signUpbtn">Sign Up</button>
-                <a href="signin.html" name="signin" id="signin" target="_blank"><button id="signinbtn">Sign In</button></a>
-            </div>
-
-        </div>
+        <h1>Team name</h1>
+        
+        <div></div>
         
     </header>
 
@@ -32,12 +33,55 @@
         <button id="collapseBtn">➖</button>
         
         <div id="selectors">
-            <p>Selector One</p>  
-            <p>
-                Selector Two
-            </p>
+
+            
+            <!--Bootstrap -->
+           
+
+
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary" >Home</button>
+                <button type="button" class="btn btn-primary">About Us</button>
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Option One
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Option Two
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+
+                <button type="button" class="btn btn-primary">Contact Us</button>
+              </div>
+             
+
+          
         </div>
-        <div></div>
+
+        <div>
+            <div id="header-btns" >   
+
+                <button id="themeToggle">🌑</button>
+              
+    
+            </div>
+
+            <button id="signUpbtn" type="button" class="btn btn-primary" >Sign Up</button>
+            <a href="signin.html" name="signin" id="signin" target="_blank"> <button id="signinbtn" type="button" class="btn btn-primary">Sign In </button></a>
+         </div>
 
     </nav>
 

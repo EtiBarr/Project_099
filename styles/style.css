@@ -34,6 +34,7 @@ header img {
     width: fit-content;
     height: fit-content;
     font-size: 1.2rem;
+    border-radius: 10em;
 }
 
 
@@ -75,7 +76,7 @@ nav {
 #selectors{
     display: flex; 
     justify-content: space-between; 
-    width: 20vw;
+    width: 40vw;
 }
 
 
@@ -89,7 +90,15 @@ main {
 }
 
 
+.dropdown button{
+    background-color: white;
+    color: black;
+    border: none;
+}
 
+.dropdown button:hover{
+    background-color: magenta
+}
 
 aside {
     display: flex;
@@ -209,6 +218,16 @@ footer.light{
     background-color: white;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

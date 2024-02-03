@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const newSrcW = currentSrcW.includes("plain_logo.png") ? "/images/plain_logo_white.png" : "/images/plain_logo.png";
         whiteLogo.setAttribute("src", newSrcW);
 
-        toggleButton.innerText = body.classList.contains("light") ? 'Dark' : 'Light';
+        toggleButton.innerText = body.classList.contains("light") ? '☀️' : '🌑';
 
         
     });
