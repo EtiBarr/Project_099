@@ -15,16 +15,27 @@
     <header>
 
         <img src="/images/plain_logo.png" class="blackLogo">
-        <a href="signin.html" name="signin" id="signin" target="_blank"><button>Sign in</button></a>
 
-            
+        <div id="header-btns">   
+
+            <button id="themeToggle">Light</button>
+            <a href="signin.html" name="signin" id="signin" target="_blank"><button id="signinbtn">Sign in</button></a>
+
+        </div>
+        
     </header>
 
     <nav>
-        <button id="toggleButton">➖</button>
+        <button id="collapseBtn">➖</button>
+        <div style="display: flex; justify-content: space-between; width: 20vw;">
+            <p>Selector One</p>  
+            <p>
+                Selector Two
+            </p>
+        </div>
+        <div></div>
 
     </nav>
-
 
 
     <main>
@@ -34,8 +45,7 @@
             <!--Obviously would have to be dynamically filled-->
             <table class="hide-text">
                     <tr>
-                        <th>User</th>
-                        <th>Score</th>
+                        <th colspan="2">Leaderboard</th>
                     </tr>
                     <tr>
                         <td>user1</td>
@@ -91,7 +101,7 @@
 
         <h5>Privacy policy &nbsp | &nbsp Terms and condition</h5>
         <h5>© 2024 
-        <img src="/images/plain_logo_white.png" alt="Image of logo" width="50px">
+        <img src="/images/plain_logo_white.png" alt="Image of logo" width="50px" class="whiteLogo">
         All rights reserved</h5>
 
     </footer>
