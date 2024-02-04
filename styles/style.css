@@ -25,7 +25,7 @@ header img {
     width: 15vmin;
 }
 
-#headerimg{
+.headerimg{
     width: 20vmin;;
 }
 
@@ -113,7 +113,7 @@ main {
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
-    height: 100vh;     /* height set just to display the scrollability*/
+    min-height: 100vh;     /* height set just to display the scrollability*/
     transition: margin-left 0.5s;
 }
 
@@ -266,93 +266,189 @@ body.light #collapseBtn:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.sign-inHeader h1, .sign-inHeader p{
-    color: white;
+/*login and registration */
+.login-container,
+.registration-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value for transparency */
+    padding: 5vmin;
+    border-radius: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-right: 8em;
+    color: #000000;
 }
 
+.login-container h2,
+.registration-container h2 {
+    color: #333;
+}
 
-.sign-inHeader img{
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-
-h3{
-    font-size: 30px;
-    font-weight: bolder;
-    color: white;
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.sign-in{
-    width: 330px;
-    padding:20px;
-}
-
-.button{
-    width: 375px;
-    padding: 15px;
-    background-color: cyan;
-    color: black;
-}
-
-
-
-.landing{
+.forgot-password {
     text-align: center;
-    color: white;
+    margin-bottom: 10px;
 }
 
-.label{
-    color: white;
-    font-size: 15px;
+.login-button {
+    background: linear-gradient(to right, cyan, magenta);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: background 0.3s;
+    width: 12em;
 }
 
-
-
-
-section{
-    margin-left: 35%;
+.login-btns,
+.registration-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
-
-
-.logos{
-    margin-left:43%;
+.login-button:hover {
+    background: linear-gradient(to right, magenta, cyan);
 }
 
+/*end of login and registration */
 
 
-.centered{
+/*contact form*/
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5vmin;
+    border-radius: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin-left: 0;
-    margin-right: 0;
+    margin-right: 8em;
+    color: #000000;
 }
+
+.contact-container h2 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+#contactMessage {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#charCount {
+    margin-top: 5px;
+    color: #888;
+}
+
+.submit-button {
+    background: linear-gradient(to right, cyan, magenta);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: background 0.3s;
+    width: 12em;
+}
+
+.submit-button:hover {
+    background: linear-gradient(to right, magenta, cyan);
+}
+
+/*end of contact form*/
+
+
+
+/*about us*/
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 0;
+    margin-right: 8em;
+    color: #000000;
+}
+
+.about-us-member {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5vmin;
+    border-radius: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 48%;
+    max-width: 50em;
+    margin-bottom: 2em;
+}
+
+.about-us-member img {
+    max-width: 30%;
+    border-radius: 50%;
+}
+
+.about-us-member h3 {
+    color: #333;
+}
+
+.about-us-member p {
+    margin-bottom: 10px;
+}
+
+.about-us-member:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.about-us-member:nth-child(even) img {
+    margin-left: 20px;
+}
+
+
+
+.about-us-member:nth-child(odd) img {
+    margin-right: 20px;
+}
+
+
+.centeredMember{
+    margin: auto;
+}
+/*end about us*/
+
+
+/*home*/
+
+.homeTitle{
+    margin-right: 8em;
+}
+/*end home*/

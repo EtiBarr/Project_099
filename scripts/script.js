@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     var toggleButton = document.getElementById('collapseBtn');
     var aside = document.querySelector('aside');
@@ -50,3 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
         imageElement.setAttribute("src", newSrc);
     }
 });
+
+
+//contact form count display
+function updateCharCount(textarea) {
+    var maxLength = 250;
+    var currentLength = textarea.value.length;
+    var remainingLength = maxLength - currentLength;
+
+    var charCountElement = document.getElementById('charCount');
+    charCountElement.textContent = 'Characters remaining: ' + remainingLength;
+}
