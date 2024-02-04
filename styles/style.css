@@ -42,10 +42,14 @@ header img {
 }
 
 
-#themeToggle:hover, #signinbtn:hover, #signUpbtn:hover, #collapseBtn:hover {
+#themeToggle:hover,
+#signinbtn:hover,
+#signUpbtn:hover,
+#collapseBtn:hover {
     background-color: magenta;
     cursor: pointer;
 }
+
 
 #header-btns{
     display: flex;
@@ -90,7 +94,8 @@ nav {
 }
 
 .btn:hover{
-    background-color: magenta
+    background-color: cyan;
+    color: black;
 }
 
 
@@ -123,7 +128,6 @@ aside {
     width: 10em;
     font-size: 1.2rem;
     text-decoration: none;
-    transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 aside table {
@@ -242,12 +246,17 @@ footer.light{
 }
 
 
+body.light .btn:hover {
+    background-color: magenta;
+}
 
-
-
-
-
-
+body.light #themeToggle:hover,
+body.light #signinbtn:hover,
+body.light #signUpbtn:hover,
+body.light #collapseBtn:hover {
+    background-color: cyan;
+    cursor: pointer;
+}
 
 
 

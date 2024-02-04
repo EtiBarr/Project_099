@@ -30,9 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const headerTitle = document.querySelector("#headerTitle");
     const btn = document.querySelectorAll('.btn');
 
-    
-
-
 
     toggleButton.addEventListener("click", function () {
         body.classList.toggle("light");
@@ -50,11 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.forEach(el => {
             el.classList.toggle('light');
           })
-
-        
-       
-
-        
 
         // image toggles
         const currentSrc = blackLogo.getAttribute("src");
@@ -107,4 +99,45 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+
+     //addition of hover after toggle
+        if(body.classList.contains("light")){
+         
+            navbtn.addEventListener("mouseover", () => {
+                navbtn.style.backgroundColor = 'cyan';
+            });
+
+            navbtn.addEventListener("mouseout", () => {
+                navbtn.style.backgroundColor = 'magenta';
+            });
+            themeToggle.addEventListener("mouseover", () => {
+                themeToggle.style.backgroundColor = 'cyan';
+            });
+
+            themeToggle.addEventListener("mouseout", () => {
+                themeToggle.style.backgroundColor = 'magenta';
+            });
+       
+        }else {
+            // Reset hover styles for dark mode
+            navbtn.addEventListener("mouseover", () => {
+                navbtn.style.backgroundColor = ''; // Reset to default
+            });
+    
+            navbtn.addEventListener("mouseout", () => {
+                navbtn.style.backgroundColor = ''; // Reset to default
+            });
+    
+            themeToggle.addEventListener("mouseover", () => {
+                themeToggle.style.backgroundColor = ''; // Reset to default
+            });
+    
+            themeToggle.addEventListener("mouseout", () => {
+                themeToggle.style.backgroundColor = ''; // Reset to default
+            });
+        }
+        
 */
