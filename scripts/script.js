@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     var toggleButton = document.getElementById('collapseBtn');
     var aside = document.querySelector('aside');
@@ -13,22 +12,34 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
 //color toggle function
 document.addEventListener("DOMContentLoaded", function () {
+
     const elementsToToggle = [
-        document.querySelector("body"),
-        document.querySelector("header"),
-        document.querySelector("nav"),
-        document.querySelector("aside"),
-        document.querySelector("content"),
-        document.querySelector("footer"),
-        document.querySelector("#collapseBtn"),
-        document.querySelector("#themeToggle"),
-        document.querySelector("#signinbtn"),
-        document.querySelector("#signUpbtn"),
-        document.querySelector("#headerTitle"),
-        ...document.querySelectorAll('.btn')
+    document.querySelector("body"),
+    document.querySelector("header"),
+    document.querySelector("nav"),
+    document.querySelector("content"),
+    document.querySelector("footer"),
+    document.querySelector("#themeToggle"),
+    document.querySelector("#signinbtn"),
+    document.querySelector("#signUpbtn"),
+    document.querySelector("#headerTitle"),
+    ...document.querySelectorAll('.btn')
     ];
+
+    const aside = document.querySelector("aside");
+    const collapseBtn = document.querySelector("#collapseBtn");
+    
+    //verifying that aside and collapseBtn are in the page so that  
+    //the script doesn't break for pages without those elements
+    if (aside != null && collapseBtn != null){ 
+        elementsToToggle.push(
+            aside,
+            collapseBtn
+        );
+    }
 
     const blackLogo = document.querySelector(".blackLogo");
     const whiteLogo = document.querySelector(".whiteLogo");
@@ -50,7 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const newSrc = currentSrc.includes("plain_logo.png") ? "/images/plain_logo_white.png" : "/images/plain_logo.png";
         imageElement.setAttribute("src", newSrc);
     }
+    
 });
+
+
 
 
 //contact form count display
