@@ -23,6 +23,7 @@ header {
     position: sticky;
     top: 0;
     justify-content: space-between;
+    transition: color 0s ease, background-color 0s ease;
 }
 
 header img {
@@ -35,6 +36,7 @@ header img {
     height: fit-content;
     font-size: 0.8rem;
     border-radius: 8em;
+    transition: color 0s ease, background-color 0s ease;
 }
 
 #headerTitle{
@@ -58,6 +60,8 @@ header img {
     justify-content: space-between;
     align-items: flex-end;
     width: 20vmin;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 #headerimg{
@@ -74,6 +78,8 @@ nav {
     position: sticky;
     top: 8vmin;       /* Height of the header, so the sticky follows both */
     justify-content: space-between;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 #collapseBtn{
@@ -81,6 +87,8 @@ nav {
     width: fit-content;
     height: fit-content;
     font-size: 1rem;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 .collapseBtn{
@@ -91,6 +99,8 @@ nav {
     background-color: white;
     color: black;
     border: none;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 .btn:hover{
@@ -113,6 +123,8 @@ main {
     width: 100%;
     height: 100vh; /* height set just to display the scrallability*/
     transition: margin-left 0.5s;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 
@@ -128,12 +140,16 @@ aside {
     width: 10em;
     font-size: 1.2rem;
     text-decoration: none;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 aside table {
     border-collapse: separate;
     opacity: 0;
     transition: opacity 0.5s ease 0.2s; 
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 aside:not(.collapsed) table {
@@ -152,6 +168,8 @@ aside.collapsed {
 
 aside, content {
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 
@@ -167,6 +185,8 @@ content {
     margin-left: 8em;
     margin-right: 1vmin;
     margin-bottom: 5vmin;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 content.collapsed {
@@ -182,6 +202,8 @@ footer {
     text-align: center;
     margin-top: auto;
     padding: 2vmin;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 footer h5 {
@@ -205,7 +227,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 header.light,
 nav.light{
     background-color: black;
-    transition: 0.5s;
+    transition: color 0s ease, background-color 0s ease;
 }
 
 #collapseBtn.light,
@@ -213,41 +235,50 @@ nav.light{
 #signinbtn.light,
 #signUpbtn.light{
     background-color: magenta;
-    transition: 0.5s;
+    transition: color 0s ease, background-color 0s ease;
 }
 
 #selectors.light{
     color: white;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 aside.light{
     background-color: white;
     color: magenta;
-    transition: 0.5s;
+    transition: color 0s ease, background-color 0s ease;
 }
 
 content.light{
     color:#000000;
-    transition: 0.5s;
+    transition: color 0s ease, background-color 0s ease;
 }
 
 footer.light{
     background-color: white;
     color: black;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 #headerTitle.light{
     color: white;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 .btn.light{
     background-color: black;
     color: white;
+    transition: color 0s ease, background-color 0s ease;
+
 }
 
 
 body.light .btn:hover {
     background-color: magenta;
+
 }
 
 body.light #themeToggle:hover,
@@ -257,6 +288,8 @@ body.light #collapseBtn:hover {
     background-color: cyan;
     cursor: pointer;
 }
+
+
 
 
 
