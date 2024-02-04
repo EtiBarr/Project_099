@@ -25,6 +25,10 @@ header img {
     width: 15vmin;
 }
 
+#headerimg{
+    width: 20vmin;;
+}
+
 #themeToggle{
     background-color: cyan;
     width: 2.5rem;
