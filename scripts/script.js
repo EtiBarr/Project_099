@@ -15,26 +15,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //color toggle function
 document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("themeToggle");
 
     const elementsToToggle = [
-    document.querySelector("body"),
-    document.querySelector("header"),
-    document.querySelector("nav"),
-    document.querySelector("content"),
-    document.querySelector("footer"),
-    document.querySelector("#themeToggle"),
-    document.querySelector("#signinbtn"),
-    document.querySelector("#signUpbtn"),
-    document.querySelector("#headerTitle"),
-    ...document.querySelectorAll('.btn')
+        document.querySelector("body"),
+        document.querySelector("header"),
+        document.querySelector("nav"),
+        document.querySelector("content"),
+        document.querySelector("footer"),
+        document.querySelector("#themeToggle"),
+        document.querySelector("#signinbtn"),
+        document.querySelector("#signUpbtn"),
+        document.querySelector("#headerTitle"),
+        ...document.querySelectorAll('.btn')
     ];
 
     const aside = document.querySelector("aside");
     const collapseBtn = document.querySelector("#collapseBtn");
-    
-    //verifying that aside and collapseBtn are in the page so that  
-    //the script doesn't break for pages without those elements
-    if (aside != null && collapseBtn != null){ 
+
+    // verifying that aside and collapseBtn are in the page so that  
+    // the script doesn't break for pages without those elements
+    if (aside != null && collapseBtn != null) {
         elementsToToggle.push(
             aside,
             collapseBtn
@@ -44,25 +45,35 @@ document.addEventListener("DOMContentLoaded", function () {
     const blackLogo = document.querySelector(".blackLogo");
     const whiteLogo = document.querySelector(".whiteLogo");
 
-    const toggleButton = document.getElementById("themeToggle");
+    // Retrieve theme from localStorage
+    const savedTheme = localStorage.getItem("theme");
+
+    function applyTheme(theme) {
+        elementsToToggle.forEach(el => el.classList.toggle("light", theme === "light"));
+        toggleImageSrc(blackLogo, theme === "light");
+        toggleImageSrc(whiteLogo, theme !== "light");
+        toggleButton.innerText = theme === "light" ? '☀️' : '🌑';
+    }
+
+    if (savedTheme) {
+        applyTheme(savedTheme);
+    }
 
     toggleButton.addEventListener("click", function () {
-        elementsToToggle.forEach(el => el.classList.toggle("light"));
+        const isLightMode = document.body.classList.toggle("light");
 
-        // image toggles
-        toggleImageSrc(blackLogo);
-        toggleImageSrc(whiteLogo);
+        // Save theme to localStorage
+        localStorage.setItem("theme", isLightMode ? "light" : "dark");
 
-        toggleButton.innerText = document.body.classList.contains("light") ? '☀️' : '🌑';
+        applyTheme(isLightMode ? "light" : "dark");
     });
 
-    function toggleImageSrc(imageElement) {
-        const currentSrc = imageElement.getAttribute("src");
-        const newSrc = currentSrc.includes("plain_logo.png") ? "/images/plain_logo_white.png" : "/images/plain_logo.png";
+    function toggleImageSrc(imageElement, isLightMode) {
+        const newSrc = isLightMode ? "/images/plain_logo_white.png" : "/images/plain_logo.png";
         imageElement.setAttribute("src", newSrc);
     }
-    
 });
+
 
 
 
