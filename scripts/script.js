@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleButton.innerText = theme === "light" ? '☀️' : '🌑';
     }
 
+    //local storage for theme
     if (savedTheme) {
         applyTheme(savedTheme);
     }
