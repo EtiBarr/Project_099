@@ -63,7 +63,6 @@ header img {
     transition: color 0s ease, background-color 0s ease;
 }
 
-
 #themeToggle:hover,
 #signinbtn:hover,
 #signUpbtn:hover,
@@ -448,17 +447,15 @@ body.light #collapseBtn:hover {
     margin-left: 20px;
 }
 
-
-
 .about-us-member:nth-child(odd) img {
     margin-right: 20px;
 }
-
 
 .centeredMember{
     margin: auto;
 }
 /*end about us*/
+
 
 
 /*home*/
